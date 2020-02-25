@@ -41,3 +41,7 @@ kramdown:
 
 plugins: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+# Google services
+google_analytics: UA-142118385-1
+
