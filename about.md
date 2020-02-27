@@ -4,7 +4,7 @@ title: Brenton Salmi
 permalink: /about/
 ---
 
-**I love designing electronics that survive in harsh environments.**
+**I love designing electronics that perform safety critical missions.**
 
 **In 2010 I led the team at the RIT Amateur Radio Club [(K2GXT)](https://www.rit.edu/sg/amateurradioclub/)** in designing 
 a high altitude balloon that ascended to over [97,000](https://www.flickr.com/photos/62621941@N02/sets/72157626674875178/) feet above Rochester, NY. 
