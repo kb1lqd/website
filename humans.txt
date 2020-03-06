@@ -1,20 +1,18 @@
 ---
 layout: null
-sitemap:
-exclude: 'yes'
+sitemap: sitemap.xml
+exclude: 'no'
 ---
 
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
+Developer & Designer: Brenton Salmi
+Twitter: @kb1lqd
+Site: http://brentonsalmi.com
+Location: Mountain View, CA, USA
 						
-/* THANKS */
-Name: Dale Anthony
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: Sublime Text, Gimp, RawTherepee, Bluefish Editor

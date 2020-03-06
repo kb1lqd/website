@@ -3,8 +3,8 @@ title:  "Climbing Mount Shasta Via West Face Route 2019"
 date:   2020-02-26 00:00:00
 description: "On July 13th, 2019 I succesfully climbed the West Face route on Mt. Shasta. Read about our plan, our climb, our challenges, and see some of the photos we took on the mountain."
 feat-img: /images/climbing/shasta_2019_medium/DSC03993.jpg
-categories: [mountaineering, adventure]
-tags: [mountaineering, mt. shasta, west face route, california, night photography, mountains]
+categories: [mountaineering]
+tags: [trip report, mt. shasta]
 ---
 
 During the weekend of July 13th, 2019 my climbing partner and I attempted and succeeded in climbing [Mt. Shasta via the West Face](https://www.shastaavalanche.org/general-route-description/west-face). This was my first large mountaineering climb without a guide and having planned the trip ourselves. A cold alpine start ran into mild altitude sickness, navigation error, and unexpected weather on our descent. This is a (very late) trip report detailing our planning, the climb, and lessons learned. 
