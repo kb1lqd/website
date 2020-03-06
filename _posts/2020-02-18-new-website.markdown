@@ -1,6 +1,7 @@
 ---
 title:  "New Website!"
 date:   2020-02-18 00:34:00
+description: "Welcome to my new website! Here's an update."
 categories: [website]
 tags: [website]
 ---

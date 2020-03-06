@@ -1,6 +1,7 @@
 ---
 title:  "Climbing Mount Shasta Via West Face Route 2019"
 date:   2020-02-26 00:00:00
+description: "On July 13th, 2019 I succesfully climbed the West Face route on Mt. Shasta. Read about our plan, our climb, our challenges, and see some of the photos we took on the mountain."
 categories: [mountaineering, adventure]
 tags: [mountaineering, mt. shasta, west face route, california, night photography, mountains]
 ---
