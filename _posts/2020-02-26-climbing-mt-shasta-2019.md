@@ -7,7 +7,7 @@ categories: [mountaineering]
 tags: [trip report, mt. shasta]
 ---
 
-During the weekend of July 13th, 2019 my climbing partner and I attempted and succeeded in climbing [Mt. Shasta via the West Face](https://www.shastaavalanche.org/general-route-description/west-face). This was my first large mountaineering climb without a guide and having planned the trip ourselves. A cold alpine start ran into mild altitude sickness, navigation error, and unexpected weather on our descent. This is a (very late) trip report detailing our planning, the climb, and lessons learned. 
+During the weekend of July 13th, 2019 my climbing partner and I attempted and succeeded in climbing [Mt. Shasta via the West Face](https://www.shastaavalanche.org/general-route-description/west-face). This was my first large mountaineering climb without a guide and having planned the trip ourselves. A cold alpine start ran into mild altitude sickness, a small navigation error, and an thunder storm during our descent. This is a (very late) trip report detailing our planning, the climb, and lessons learned. 
 
 # The Plan 
 
