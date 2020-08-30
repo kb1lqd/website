@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brenton Salmi</title>
+    <description>Brents Personal Website</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 30 Aug 2020 13:02:31 -0700</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2020 13:02:31 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>KB1LQD Optical Project Overview</title>
+        <description>&lt;p&gt;Optical communications is an area I’ve been curious about since my introduction into electronics, from simple AM voice transmissions to digital communications. I built a crude AM LASER TX/RX circuit in high school with my then vague electronics knowledge and circa 2005 online schematics I found online. I’d like to revisit this project with a renewed focus on building from fundamentals of a simple analog transmitter/receiver to a digital Frequency Shift Keying (FSK) design. I want this to be a fun project that I can achieve with an hour or two of spare time over the week as my main effort.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-references&quot;&gt;Project References&lt;/h2&gt;
+&lt;p&gt;The table below contains the project reference links.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Reference Name&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;GIT HW Repo&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Version controlled GIT repo of the project hardware files&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/kb1lqd/optical_comm_1&quot;&gt;KB1LQD Optical Comm Project&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;project-milestone-path&quot;&gt;Project Milestone Path&lt;/h2&gt;
+&lt;p&gt;This project is expected to achieve several intermediate milestones, each as a building block on the prior. For the first milestone a simplistic goal is expected.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Objective&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Create a simple AM modulated LED transmitter &amp;amp; receiver that can pass audio through the link&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I expect this to encompass either a simple base-band AM or Pulse-Frequency Modulation implementation and allow simple analog audio or audio based digital signal to be passed through link. Brief research indicates directly modulating light via phase shifting offers greatly increased bandwidth but is much more complicated (using direct light modulating mediums such as liquid crystal). Keeping it simple will also allow basic infrastructure such as optical equipment and aiming devices to be created.&lt;/p&gt;
+
+&lt;p&gt;Future updates will be explored at a later time. Digital communications is likely easiest just by using audio modulations such as those typical in ham radio (PSK32, FT8, etc…) or more generic data modulations just as Audio Frequency Shift Keying (AFSK) using programs such as mini-modem.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-plan&quot;&gt;Project Plan&lt;/h2&gt;
+&lt;p&gt;I’m going to implement the following workflow within the project to ensure I create the intended hardware. This may be a little intense for a personal project but I intend to keep it light and simple.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Requirements Capture
+    &lt;ul&gt;
+      &lt;li&gt;Capture the intended project requirements at a high level. This should include interface requirements and functionality.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Architectural Design
+    &lt;ul&gt;
+      &lt;li&gt;High level block diagram and interface control documentation (ICD) that implements an architectural design that achieves the requirements captured.&lt;/li&gt;
+      &lt;li&gt;Additional low-level requirements generated during this step should be captured&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Detailed Design
+    &lt;ul&gt;
+      &lt;li&gt;Circuit designs are created that implement the architectural design&lt;/li&gt;
+      &lt;li&gt;Circuit simulations to prove intended operation and requirements are met&lt;/li&gt;
+      &lt;li&gt;PCBA designs are created&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Implementation
+    &lt;ul&gt;
+      &lt;li&gt;PCBA’s are assembled&lt;/li&gt;
+      &lt;li&gt;PCBA checkout testing is performed&lt;/li&gt;
+      &lt;li&gt;Functional test the PCBA’s&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;p&gt;The project requirements are listed below.&lt;/p&gt;
+
+&lt;h3 id=&quot;transmitter&quot;&gt;Transmitter&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Req #&lt;/th&gt;
+      &lt;th&gt;Requirement&lt;/th&gt;
+      &lt;th&gt;Rational&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;The transmitter shall implement amplitude modulation at baseband.&lt;/td&gt;
+      &lt;td&gt;Derived&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;The transmitter shall exhibit at least 4khz of bandwidth&lt;/td&gt;
+      &lt;td&gt;To support voice operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;The transmitter shall accept an input signal from an audio headphone output interface&lt;/td&gt;
+      &lt;td&gt;Use of a computer headphone jack to provide source signals into the transmitter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;The transmitter shall accept an input signal from a microphone interface&lt;/td&gt;
+      &lt;td&gt;Use of an external microphone to provide source signals into the transmitter&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;The transmitter shall be powered from a 5V +/-250mV source&lt;/td&gt;
+      &lt;td&gt;USB power&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;receiver&quot;&gt;Receiver&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Req #&lt;/th&gt;
+      &lt;th&gt;Requirement&lt;/th&gt;
+      &lt;th&gt;Rational&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;The receiver shall implement amplitude modulation at baseband.&lt;/td&gt;
+      &lt;td&gt;Derived&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;The receiver shall exhibit at least 4khz of bandwidth&lt;/td&gt;
+      &lt;td&gt;To support voice operations&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;The receiver shall output demodulated signals from an audio headphone output level interface&lt;/td&gt;
+      &lt;td&gt;Monitor headphone output&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;The receiver shall output demodulated signals from a microphone output level interface&lt;/td&gt;
+      &lt;td&gt;Output provided for computer microphone input interface&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;The receiver shall be powered from a 5V +/-250mV source&lt;/td&gt;
+      &lt;td&gt;USB power&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;architectural-design&quot;&gt;Architectural Design&lt;/h2&gt;
+
+&lt;p&gt;I performed the architectural design implementing both the transmitter and receiver on a single assembly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/kb1lqd_optical_comm_1/architecturaldesign.svg&quot; alt=&quot;Block diagram architectural design of the optical transmitter/receiver.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The interfaces generated while implementing the architecture design are shown below. Note that I added an additional parallel receiver monitoring output to provide a means to both listen manually to a received signal and monitor into a computer (for processing/recording if desired.)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Interface&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PWR.5V.IN&lt;/td&gt;
+      &lt;td&gt;5V +/-250mV power input for the assembly&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AUDIO.MIC.IN&lt;/td&gt;
+      &lt;td&gt;External audio microphone input source interface that can be selected as the transmitter input signal source.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;AUDIO.SPK.IN&lt;/td&gt;
+      &lt;td&gt;External speaker level input source interface that can be selected as the transmitter input signal source. This is intended to be directly connected to a headphone speaker output jack.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;EXTDETECTOR.IN&lt;/td&gt;
+      &lt;td&gt;External optical detector input interface. It is expected that the external detector contains local buffering/amplification.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LEDBIAS.OUT&lt;/td&gt;
+      &lt;td&gt;External output interface used to connect an external LED to be driven as a transmitter.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RX.AUDIO.OUT0&lt;/td&gt;
+      &lt;td&gt;External headphone/line-in audio output 0.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RX.AUDIO.OUT1&lt;/td&gt;
+      &lt;td&gt;External headphone/line-in audio output 1.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 29 Aug 2020 17:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2020/optical-project-start/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/optical-project-start/</guid>
+        
+        <category>engineering</category>
+        
+        <category>electronics</category>
+        
+        <category>communications</category>
+        
+        <category>radio</category>
+        
+        
+        <category>electronics</category>
+        
+      </item>
+    
+      <item>
+        <title>Climbing Mount Shasta Via West Face Route 2019</title>
+        <description>&lt;p&gt;During the weekend of July 13th, 2019 my climbing partner and I attempted and succeeded in climbing &lt;a href=&quot;https://www.shastaavalanche.org/general-route-description/west-face&quot;&gt;Mt. Shasta via the West Face&lt;/a&gt;. This was my first large mountaineering climb without a guide and having planned the trip ourselves. A cold alpine start ran into mild altitude sickness, navigation error, and unexpected weather on our descent. This is a (very late) trip report detailing our planning, the climb, and lessons learned.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-plan&quot;&gt;The Plan&lt;/h1&gt;
+
+&lt;p&gt;Our plan was to drive to Mt. Shasta during the early day and hike during the afternoon from the Bunny Flats trailhead to the Hidden Valley camp Saturday to set up camp. We’d then get an alpine start on the summit bid at 2am on Sunday morning continuing up the standard West Face route that links to Misery Hill for the final summit climb. Our absolute turn around time was set for noon.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-climb&quot;&gt;The Climb&lt;/h1&gt;
+
+&lt;p&gt;My partner and I set off from the Bay area for a 6 hour drive to Bunny Flat trailhead parking. It was an exciting start albeit felt a bit awkward leaving for a mountain so late in the morning but this worked out quite well! The trek was mostly wet dirt except for scattered patches of snow up to the &lt;a href=&quot;https://www.sierraclubfoundation.org/what-we-fund/horse-camp-mt-shasta&quot;&gt;Horse Camp hut&lt;/a&gt;. The trail to Hidden Valley camp threw a few scree fields and isolated snowfields to traverse. We arrived at camp a few hours before sunset and had just enough time to cook and prepare for the next morning without roasting on the mountain during the daytime in our tent.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03779.jpg&quot; alt=&quot;The view looking down from the Mt. Shasta trail leading to Hidden Valley camp.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Hidden Valley campsites were on dry ground surrounded by the snowfield in front of the West Face. We met only a handful of other climbers on this route, I actually knew and worked with a few of them in my past life at SpaceX… It’s a small world! As my partner made his way to bed I took a half hour or so to take some night photography shots of Mt. Shasta. It was a beautiful, seemingly full moon lit night that blew wispy clouds sporadically off the peak. Our mission the next day was to safely climb up the middle of this photo below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03844.jpg&quot; alt=&quot;A moonlit night photo of the Mt. Shasta West Face.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before settling in for bed we discussed and decided to move our wake-up time to 1:30am. Alarms buzzed and we woke, made coffee, ate, and dressed for the adventure awaiting us. Hiking across the snow and rock field to the first real incline was much longer than it seemed during the daytime. We were greeted with a steep incline within a chute that lead to a more reasonable sustained climb up the brunt of the face. We made good time and felt great (and of course a bit tired from our alpine start) as the sun began to rise.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03888.jpg&quot; alt=&quot;Looking down at my partner climbing the West Face route of Mt. Shasta.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we trudged onward we could hear the excitement in our voices turn to a mixture of tired, heavy breathing at the high altitude. We had several thousand feet of climbing to do and thick clouds rolled in partially causing a navigation error on my part leading us a bit off route to the climbers right. We fixed the error when we realized and continued upwards.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03912.jpg&quot; alt=&quot;A view of the steep snowfield climb of the Mt. Shasta West Face nearing the top of the route.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My partner was starting to feel mild &lt;a href=&quot;https://www.altitude.org/altitude-sickness&quot;&gt;altitude sickness&lt;/a&gt;. I knew that in the past I’ve felt it above 12,000 feet and was assessing myself, and my partner. Surprisingly, I was feeling great. We decided to continue at a slower pace and make sure we’re eating and drinking. I began to watch him more closely and ensure his altitude sickness was the “I’m feeling nauseous and tired” kind and didn’t start showing signs of incoherence, wobbling, or threatening to vomit. We made way up for the top of the West Face route that meets with the Avalanche Gulch (and several other routes) at Misery Hill.
+The last few hundred feet of elevation had some of the steepest snow on the route. I was a bit nervous prior but being on this ~40 degree slope but it felt much more comfortable in person! Reaching the ~13,000 foot West Face We agreed that if I felt he was progressing towards more severe symptoms we’d turn around no questions asked on his part. He also could turn us around with no questions asked.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03916.jpg&quot; alt=&quot;My climbing partner taking a rest at the top of the Mt. Shasta West Face route.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the top of the West Face the view was beautiful! We could gaze down into the Whitney Glacier and then over to Misery Hill. Misery Hill was dotted with specs of climbers slowly making their way up the aptly named hill. The West Face provides a comforting false summit leaving all of Misery Hill’s not so comforting ~1000 feet of elevation for round two. We traversed above the Whitney Glacier and found ourselves amongst the crowds of Avalanche Gulch climbing our last hill.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC04017.jpg&quot; alt=&quot;Looking back along the Whitney Glacier towards the West Face route while at Misery Hill (Mt. Shasta).&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03972.jpg&quot; alt=&quot;A selfie climbing the last spire of Mt. Shasta to the summit.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Misery Hill was mostly a rocky trail this late in the season, my partner was still feeling the altitude and slow but in good spirits! Lightly spotted clouds formed around us and brought the occasional snowflakes passing by us. This made for an amazing summit climb but may have been a forewarning to our descent…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03940.jpg&quot; alt=&quot;My climbing parter on Misery Hill (Mt. Shasta).&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We reached the summit at approximately 11am and signed the summit log, took some photos, and took in the view. Now we were tired and no longer had the summit ahead of us but instead 5,000 feet of descending to our camp then packing out to our car.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03993.jpg&quot; alt=&quot;My climbing partner and I on the summit of Mt. Shasta July 2019.&quot; /&gt; 
+&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC03997.jpg&quot; alt=&quot;My climbing partner and I signed summit logged book.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we traversed above the Whitney Glacier thicker clouds rolled in, some being thick enough to risk not seeing eachother 50 feet apart! We stayed close and found the top of the West Face route again. The other climbing party on the west face had already descended and we found their glissading tracks. We happily knew this route let climbers glissade nearly the entire ~4,000 feet and took our opportunity. I’d never glissaded THAT MUCH before, it was an amazing experience with the benefit of letting us descend to the camp plateau in just over 20 minutes!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/climbing/shasta_2019_medium/DSC04010.jpg&quot; alt=&quot;A photo of my climbing partner as thick clouds rolled in at the base of Misery Hill (Mt. Shasta).&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we walked the flat portion of Hidden Valley camp’s snowfield, over a lot of &lt;a href=&quot;https://en.wikipedia.org/wiki/Watermelon_snow&quot;&gt;watermelon snow&lt;/a&gt;, we heard the first thunder in the distance. We were still well above any tree cover. Anxiously we packed and quickly made our way to Horse Camp where we had tree cover. Tree cover is not ideal… but I’ll take ground voltage differentials over a direct hit anyday. We got rained on, scared, but made it to the car for a very, very, very tired drive home.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-lessons-learned&quot;&gt;The Lessons Learned&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Lacking cardio fitness likely exaggerated my climbing partner’s his altitude sickness&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Altitude sickness can be hard to gauge with summit fever pulling and the vagueness of severity.&lt;/li&gt;
+      &lt;li&gt;We were actually making risky call to continue going up&lt;/li&gt;
+      &lt;li&gt;Climb with people who you trust WILL turn themselves around (and do them that favor yourself as well)&lt;/li&gt;
+      &lt;li&gt;Arriving to camp so late left little time for acclimatization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Get as much rest as possible with an alpine start&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;A likely contibutor to the altitude sickness was our lack of sleep (few hours at most)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Be weary of in-field navigation changes, question why you think that is the right thing to do&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Rock bands in clouds are hard to navigate, they all look the same up close&lt;/li&gt;
+      &lt;li&gt;We started climbing towards a chute linking Casaval ridge before realizing this was not correct and certainly not easier to climb.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weather happens quick, without forecast warning, trust your gut when clouds tell you something is brewing&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 25 Feb 2020 16:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2020/climbing-mt-shasta-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/climbing-mt-shasta-2019/</guid>
+        
+        <category>mountaineering</category>
+        
+        <category>mt. shasta</category>
+        
+        <category>west face route</category>
+        
+        <category>california</category>
+        
+        <category>night photography</category>
+        
+        <category>mountains</category>
+        
+        
+        <category>mountaineering</category>
+        
+        <category>adventure</category>
+        
+      </item>
+    
+      <item>
+        <title>New Website!</title>
+        <description>&lt;p&gt;It’s been a good start to 2020 and now I’m finally bringing up a new website base on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;! I intend to showcase my photography, projects, and adventures in a very loose informal way.&lt;/p&gt;
+
+&lt;p&gt;I’ll slowly be adding to this website by updating both content and layout.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2020-02-18/DSC01991.jpg&quot; alt=&quot;Climbing Waterfall Cliffs - Castle Rock State Park&quot; height=&quot;512px&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Feb 2020 16:34:00 -0800</pubDate>
+        <link>http://localhost:4000/2020/new-website/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/new-website/</guid>
+        
+        <category>website</category>
+        
+        
+        <category>website</category>
+        
+      </item>
+    
+  </channel>
+</rss>
