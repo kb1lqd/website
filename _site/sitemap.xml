@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</loc>
+      <loc>http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</loc>
       
         <lastmod>2020-10-25T17:00:00-07:00</lastmod>
       
@@ -18,22 +18,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2020/optical-project-start/</loc>
-      
-        <lastmod>2020-08-29T17:00:00-07:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/2020/climbing-mt-shasta-2019/</loc>
+      <loc>http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</loc>
       
         <lastmod>2020-02-25T16:00:00-08:00</lastmod>
       
@@ -48,7 +33,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/2020/new-website/</loc>
+      <loc>http://www.brentonsalmi.com/2020/new-website/</loc>
       
         <lastmod>2020-02-17T16:34:00-08:00</lastmod>
       
@@ -64,9 +49,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>http://www.brentonsalmi.com/about/</loc>
       
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,9 +66,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/feed.xml</loc>
+      <loc>http://www.brentonsalmi.com/feed.xml</loc>
       
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,28 +81,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/humans.txt</loc>
+      <loc>http://www.brentonsalmi.com/humans.txt</loc>
       
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/css/main.css</loc>
-      
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -134,9 +100,28 @@
   
     
     <url>
-      <loc>http://localhost:4000/assets/css/style.css</loc>
+      <loc>http://www.brentonsalmi.com/css/main.css</loc>
       
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://www.brentonsalmi.com/assets/css/style.css</loc>
+      
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -149,9 +134,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/robots.txt</loc>
+      <loc>http://www.brentonsalmi.com/robots.txt</loc>
       
-        <lastmod>2020-11-01T21:32:45-08:00</lastmod>
+        <lastmod>2020-11-01T21:48:19-08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

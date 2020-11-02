@@ -3,10 +3,10 @@
   <channel>
     <title>Brenton Salmi</title>
     <description>Brents Personal Website</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 01 Nov 2020 21:32:45 -0800</pubDate>
-    <lastBuildDate>Sun, 01 Nov 2020 21:32:45 -0800</lastBuildDate>
+    <link>http://www.brentonsalmi.com/</link>
+    <atom:link href="http://www.brentonsalmi.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 01 Nov 2020 21:48:19 -0800</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2020 21:48:19 -0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -90,8 +90,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 25 Oct 2020 17:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</guid>
+        <link>http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</guid>
         
         <category>ham radio</category>
         
@@ -103,222 +103,6 @@
         
         
         <category>amateur radio</category>
-        
-      </item>
-    
-      <item>
-        <title>KB1LQD Optical Project Overview</title>
-        <description>&lt;p&gt;Optical communications is an area I’ve been curious about since my introduction into electronics, from simple AM voice transmissions to digital communications. I built a crude AM LASER TX/RX circuit in high school with my then vague electronics knowledge and circa 2005 online schematics I found online. I’d like to revisit this project with a renewed focus on building from fundamentals of a simple analog transmitter/receiver to a digital Frequency Shift Keying (FSK) design. I want this to be a fun project that I can achieve with an hour or two of spare time over the week as my main effort.&lt;/p&gt;
-
-&lt;h2 id=&quot;project-references&quot;&gt;Project References&lt;/h2&gt;
-&lt;p&gt;The table below contains the project reference links.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Reference Name&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;GIT HW Repo&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Version controlled GIT repo of the project hardware files&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/kb1lqd/optical_comm_1&quot;&gt;KB1LQD Optical Comm Project&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;project-milestone-path&quot;&gt;Project Milestone Path&lt;/h2&gt;
-&lt;p&gt;This project is expected to achieve several intermediate milestones, each as a building block on the prior. For the first milestone a simplistic goal is expected.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Objective&lt;/strong&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Create a simple AM modulated LED transmitter &amp;amp; receiver that can pass audio through the link&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I expect this to encompass either a simple base-band AM or Pulse-Frequency Modulation implementation and allow simple analog audio or audio based digital signal to be passed through link. Brief research indicates directly modulating light via phase shifting offers greatly increased bandwidth but is much more complicated (using direct light modulating mediums such as liquid crystal). Keeping it simple will also allow basic infrastructure such as optical equipment and aiming devices to be created.&lt;/p&gt;
-
-&lt;p&gt;Future updates will be explored at a later time. Digital communications is likely easiest just by using audio modulations such as those typical in ham radio (PSK32, FT8, etc…) or more generic data modulations just as Audio Frequency Shift Keying (AFSK) using programs such as mini-modem.&lt;/p&gt;
-
-&lt;h2 id=&quot;project-plan&quot;&gt;Project Plan&lt;/h2&gt;
-&lt;p&gt;I’m going to implement the following workflow within the project to ensure I create the intended hardware. This may be a little intense for a personal project but I intend to keep it light and simple.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Requirements Capture
-    &lt;ul&gt;
-      &lt;li&gt;Capture the intended project requirements at a high level. This should include interface requirements and functionality.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Architectural Design
-    &lt;ul&gt;
-      &lt;li&gt;High level block diagram and interface control documentation (ICD) that implements an architectural design that achieves the requirements captured.&lt;/li&gt;
-      &lt;li&gt;Additional low-level requirements generated during this step should be captured&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Detailed Design
-    &lt;ul&gt;
-      &lt;li&gt;Circuit designs are created that implement the architectural design&lt;/li&gt;
-      &lt;li&gt;Circuit simulations to prove intended operation and requirements are met&lt;/li&gt;
-      &lt;li&gt;PCBA designs are created&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Implementation
-    &lt;ul&gt;
-      &lt;li&gt;PCBA’s are assembled&lt;/li&gt;
-      &lt;li&gt;PCBA checkout testing is performed&lt;/li&gt;
-      &lt;li&gt;Functional test the PCBA’s&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
-
-&lt;p&gt;The project requirements are listed below.&lt;/p&gt;
-
-&lt;h3 id=&quot;transmitter&quot;&gt;Transmitter&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Req #&lt;/th&gt;
-      &lt;th&gt;Requirement&lt;/th&gt;
-      &lt;th&gt;Rational&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;The transmitter shall implement amplitude modulation at baseband.&lt;/td&gt;
-      &lt;td&gt;Derived&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;The transmitter shall exhibit at least 4khz of bandwidth&lt;/td&gt;
-      &lt;td&gt;To support voice operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;The transmitter shall accept an input signal from an audio headphone output interface&lt;/td&gt;
-      &lt;td&gt;Use of a computer headphone jack to provide source signals into the transmitter&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;The transmitter shall accept an input signal from a microphone interface&lt;/td&gt;
-      &lt;td&gt;Use of an external microphone to provide source signals into the transmitter&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5&lt;/td&gt;
-      &lt;td&gt;The transmitter shall be powered from a 5V +/-250mV source&lt;/td&gt;
-      &lt;td&gt;USB power&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;receiver&quot;&gt;Receiver&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Req #&lt;/th&gt;
-      &lt;th&gt;Requirement&lt;/th&gt;
-      &lt;th&gt;Rational&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;The receiver shall implement amplitude modulation at baseband.&lt;/td&gt;
-      &lt;td&gt;Derived&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;The receiver shall exhibit at least 4khz of bandwidth&lt;/td&gt;
-      &lt;td&gt;To support voice operations&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;The receiver shall output demodulated signals from an audio headphone output level interface&lt;/td&gt;
-      &lt;td&gt;Monitor headphone output&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;The receiver shall output demodulated signals from a microphone output level interface&lt;/td&gt;
-      &lt;td&gt;Output provided for computer microphone input interface&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5&lt;/td&gt;
-      &lt;td&gt;The receiver shall be powered from a 5V +/-250mV source&lt;/td&gt;
-      &lt;td&gt;USB power&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;architectural-design&quot;&gt;Architectural Design&lt;/h2&gt;
-
-&lt;p&gt;I performed the architectural design implementing both the transmitter and receiver on a single assembly.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/kb1lqd_optical_comm_1/architecturaldesign.svg&quot; alt=&quot;Block diagram architectural design of the optical transmitter/receiver.&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The interfaces generated while implementing the architecture design are shown below. Note that I added an additional parallel receiver monitoring output to provide a means to both listen manually to a received signal and monitor into a computer (for processing/recording if desired.)&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Interface&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;PWR.5V.IN&lt;/td&gt;
-      &lt;td&gt;5V +/-250mV power input for the assembly&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;AUDIO.MIC.IN&lt;/td&gt;
-      &lt;td&gt;External audio microphone input source interface that can be selected as the transmitter input signal source.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;AUDIO.SPK.IN&lt;/td&gt;
-      &lt;td&gt;External speaker level input source interface that can be selected as the transmitter input signal source. This is intended to be directly connected to a headphone speaker output jack.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;EXTDETECTOR.IN&lt;/td&gt;
-      &lt;td&gt;External optical detector input interface. It is expected that the external detector contains local buffering/amplification.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;LEDBIAS.OUT&lt;/td&gt;
-      &lt;td&gt;External output interface used to connect an external LED to be driven as a transmitter.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RX.AUDIO.OUT0&lt;/td&gt;
-      &lt;td&gt;External headphone/line-in audio output 0.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RX.AUDIO.OUT1&lt;/td&gt;
-      &lt;td&gt;External headphone/line-in audio output 1.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Sat, 29 Aug 2020 17:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2020/optical-project-start/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/optical-project-start/</guid>
-        
-        <category>engineering</category>
-        
-        <category>electronics</category>
-        
-        <category>communications</category>
-        
-        <category>radio</category>
-        
-        
-        <category>electronics</category>
         
       </item>
     
@@ -400,8 +184,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 25 Feb 2020 16:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2020/climbing-mt-shasta-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/climbing-mt-shasta-2019/</guid>
+        <link>http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</guid>
         
         <category>mountaineering</category>
         
@@ -431,8 +215,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;p&gt;&lt;img src=&quot;/images/2020-02-18/DSC01991.jpg&quot; alt=&quot;Climbing Waterfall Cliffs - Castle Rock State Park&quot; height=&quot;512px&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Feb 2020 16:34:00 -0800</pubDate>
-        <link>http://localhost:4000/2020/new-website/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/new-website/</guid>
+        <link>http://www.brentonsalmi.com/2020/new-website/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/new-website/</guid>
         
         <category>website</category>
         
