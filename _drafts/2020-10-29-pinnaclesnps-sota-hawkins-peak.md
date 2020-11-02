@@ -4,7 +4,7 @@ date:   2020-10-26 00:00:00
 categories: [amateur radio]
 tags: [ham radio, sota, climbing, radio]
 ---
-In late October 2020 Mack and I were supposed to start a 3 day bike-packing trip into the Portola Redwoods but this turned into a 2 day adventure in the Pinnacles National Park! A last minute Red-Flag warning and 40-50MPH wind gusts in Portola made our expected stay under the Redwoods a bit unnerving! We instead decided to head to the Pinnacles hiking, climbing, and I even brought my new Elecraft KX2 amateur radio to attempt a SOTA activation of [W6/SC-213 Hawkins Peak](https://summits.sota.org.uk/summit/W6/SC-213).
+In late October 2020 Mack and I were supposed to start a 3 day bike-packing trip into the Portola Redwoods but this turned into a 2 day adventure in the [Pinnacles National Park](https://www.nps.gov/pinn/index.htm)! A last minute Red-Flag warning and 40-50MPH wind gusts in Portola made our expected stay under the Redwoods a bit unnerving! We instead decided to head to the Pinnacles hiking, climbing, and I even brought my new Elecraft KX2 amateur radio to attempt a SOTA activation of [W6/SC-213 Hawkins Peak](https://summits.sota.org.uk/summit/W6/SC-213).
 
 <img src="/images/2020_10_30/DSC06925.jpg" alt="Brenton Salmi, KB1LQD, operating his KX2 radio during a SOTA activation of Hawkins Peak in the Pinnacles National Park."/>
 
@@ -43,7 +43,7 @@ Having bailed from the Flatiron we settled for a nice long hike along the high p
 
 <img src="/images/2020_10_30/IMG_3181.jpg" alt="Brenton Salmi, KB1LQD, at the top of Bynum's Spire."/>
 
-This route is only a 5.2 but the first, and only, bolt is about 20 feet high, it's a bit sporty (and mossy). I did some investigation with my camera's zoom lens and hopping on nearby boulders to verify the route actually has an anchor at the top. The guide book doesn't show one and the "Pinnacles Rappel" (simul-rapelling off two sides of a pinnacle) is a real thing I don't really want to do.  I set up a quick top-rope while the Condors flew around the nearby spires (there were no active Condor closures that I could find for the area, always check!).  
+This route is only a 5.2 but the first, and only, bolt is about 20 feet high, it's a bit sporty (and mossy). I did some investigation with my camera's zoom lens and hopping on nearby boulders to verify the route actually has an anchor at the top. The guide book doesn't show one and the ["Pinnacles Rappel"](http://bayareaclimbing.blogspot.com/2011/09/pinnacles-national-monument.html) (simul-rapelling off two sides of a pinnacle) is a real thing I don't really want to do.  I set up a quick top-rope while the Condors flew around the nearby spires (there were no active Condor closures that I could find for the area, always check!).  
 
 <img src="/images/2020_10_30/IMG_3184.jpg" alt="Brenton Salmi's shadow from Bynum's Spire cast onto Tuff Dome'."/>
 
@@ -56,3 +56,20 @@ We got a lap or two on the rock and the sun was setting. It was time to get our 
 We continued back down the Condor Gulch trail we'd taken the day prior. It was complete darkness when we ran into another group going much slower than us when we realized this was actually the San Benito Search and Rescue team carrying out an injured person. We gave them a good 100 or so feet distance, there was no point to passing and making them worry about us. We eventually passed when they let us go by taking a break at a switchback but we cut the trail a bit to give them distance. I didn't see climbing gear but we're not sure what happened, we were near the high peaks trail with many dangerous hiking cliff staircases... It didn't appear life threatening thankfully and I hope they are safe and recovering! Experiences like this, especially having bailed from a route hours earlier for my own safety is a good reminder of how fragile and quick to unravel outdoor adventures can become.
 
 Having turned our 3 day vacation into 2 days in the Pinnacles getting some great hiking, climbing, and even a SOTA amateur radio activation in we were happy, albeit a bit tired. There are several other SOTA peaks in the Pinnacles and I'm sure we'll return to activate the others among our climbing and hiking adventures here. Pinnacles holds a bit of a hesitant love in my heart - hot, run-out climbs, but always adventures.  
+
+## SOTA Lessons Learned
+
+Here are a few lessons learned activating the SOTA summit.
+
+* A mast would be allow for or better antenna setups
+  * A bit more height (but height isn't too critical if you're on a summit)
+  * Not reliant on height/distant to trees or boulders
+
+## Climbing Lessons Learned
+
+Here are a few lessons learned from climbing during this trip.
+
+* COVID-19 has stopped our climbing gym training and this greatly affects:
+  * Physical ability - Especially the climbing specific toe/fingers
+  * Mental ability - Everything is a bit scarier
+* Bailing is OK - This is a dangerous activity and trust your gut.
