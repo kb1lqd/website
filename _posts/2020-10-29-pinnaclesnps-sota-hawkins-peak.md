@@ -34,7 +34,7 @@ After 13 contacts it was getting cold and dark and we had a few miles of downhil
 
 The next morning we set off again, this time our radios replaced by harnesses, rope, carabiners, and other assorted rock climbing equipment (we did bring my Yeasu VX-8R but had no luck on 146.52 MHz calling out during the day). This gear was much heavier than my KX2, unfortunately. We set off to find the Flatiron rock climbing area to try some easier 5.0 and 5.3 sport climbs. "Sport" is a relative term in Pinnacles where bolts can be spaced out 10-20 feet apart on the suspect Pinnacles rock quality. It's prudent to keep an eye out for rocks, horns, or other natural features to sling as added protection. Neither Mack or I had climbed, at all, in many months (this is the Covid-19 era...) so we were taking it easy. The first route, unprotected 5.0 climbing to the first bolt around a rock out-cropping was too much for my risk assessment and I down-climbed.
 
-I jumped over to the 5.3 route nearby and climbed up to a ledge where the 3rd bolt of the route was. This looked much easier and less sketchy from the ground! Reaching the next bolt required traversing 10 feet across the ledge and climbing up and over another 5 feet. Falling here would be bad, hitting the ledge(s) and scrapping a very long way down. The lonely little shrub pointed out by the guide book on this ledge was about the size of my thumb, less that stellar for trusting with my health and safety. This is the first time I have every bailed from a route and left gear behind. Scouting for additional natural protection but coming up empty handed I decided to play it safe and come down. I cut off a few feet of webbing, grabbed a rappel ring from my harness, and fashioned a water knot to the 3rd bolt and got lowered. It happens, it was a good lesson considering I've climbing harder routes in the Pinnacles with just as long run-out bolts.
+I jumped over to the 5.3 route nearby and climbed up to a ledge where the 3rd bolt of the route was. This looked much easier and less sketchy from the ground! Reaching the next bolt required traversing 10 feet across the ledge and climbing up and over another 5 feet. Falling here would be bad, hitting the ledge(s) and scrapping a very long way down. The lonely little shrub pointed out by the guide book on this ledge was about the size of my thumb, less that stellar for trusting with my health and safety. This is the first time I have ever bailed from a route and left gear behind. Scouting for additional natural protection but coming up empty handed I decided to play it safe and come down. I cut off a few feet of webbing, grabbed a rappel ring from my harness, and fashioned a water knot to the 3rd bolt and got lowered. It happens, it was a good lesson considering I've climbing harder routes in the Pinnacles with just as long run-out bolts.
 
 <img src="/images/2020_10_30/DSC07029-1.jpg" alt="Brenton Salmi, KB1LQD, studying climbing routes."/>
 
@@ -61,8 +61,8 @@ Having turned our 3 day vacation into 2 days in the Pinnacles getting some great
 
 Here are a few lessons learned activating the SOTA summit.
 
-* A mast would be allow for or better antenna setups
-  * A bit more height (but height isn't too critical if you're on a summit)
+* A mast would allow for quicker and better antenna setups
+  * A bit more height  to reduce transmit ground losses (but height isn't too critical if you're on a summit)
   * Not reliant on height/distant to trees or boulders
 
 ## Climbing Lessons Learned
