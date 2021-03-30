@@ -3,11 +3,79 @@
   <channel>
     <title>Brenton Salmi</title>
     <description>Brents Personal Website</description>
-    <link>http://www.brentonsalmi.com/</link>
-    <atom:link href="http://www.brentonsalmi.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 01 Nov 2020 22:24:46 -0800</pubDate>
-    <lastBuildDate>Sun, 01 Nov 2020 22:24:46 -0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 29 Mar 2021 23:52:05 -0700</pubDate>
+    <lastBuildDate>Mon, 29 Mar 2021 23:52:05 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Magnetic Loop</title>
+        <description>
+&lt;hr /&gt;
+&lt;p&gt;title:  “Building A Magnetic Loop Antenna”
+date:   2021-03-29 00:00:00
+categories: [amateur radio]
+tags: [ham radio, antenna, homebrew, radio]
+—
+During the 2020 COVID-19 pandemic I decided to dive back into the world of amatuer radio, building a workbench/ham radio “shack”, and building a few antennas to get on the air. I live in a fairly urban area of Mountain View, CA with limited antenna options at my apartment. Horizontal wire antennas perform poorly low to the ground and it’d be difficult to erect a vertical antenna without getting my landlords permission which landed me at &lt;a href=&quot;https://en.wikipedia.org/wiki/Loop_antenna&quot;&gt;“Magnetic Loop” antennas&lt;/a&gt;. I’ve always wanted to build one! It was time to grab some tools and start cutting copper pipes.&lt;/p&gt;
+
+&lt;p&gt;This antenna tunes between the 10m (10MHz) through 15m (21MHz) ham bands and can handle up to 20W of power. I used a stepper motor and gearing to allow remote tuning via a Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/Loop-Photo-1.jpg&quot; alt=&quot;KB1LQD's homebuilt 10 meter through 15 meter ham radio magnetic loop antenna.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is not a detailed how-to article but I will provide helpful links and insight I discovered during this design/build.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;There are many resources online about magnetic loop, A.K.A Small Transmitting Loop (STL) antennas. Additionaly, there is a lot of misinformation including some in very popular resources listed below. Ultimately a mix-and-match will fill in most details and key tradeoffs. It’s an antenna and there’s no black-magic RF noise filtering involved.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.66pacific.com/calculators/small-transmitting-loop-antenna-calculator.aspx&quot;&gt;www.66pacific.com Small Transmitting Loop Calculator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nonstopsystems.com/radio/frank_radio_antenna_magloop.htm&quot;&gt;Non-Stop Systems Magnetic Loop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.w8ji.com/magnetic_receiving_loops.htm&quot;&gt;W8JI Magnetic Loop Analysis&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;This is a great in-depth technical resource &amp;amp; it’s classic ham-radio web 1.0 HTML!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;antenna-design&quot;&gt;Antenna Design&lt;/h2&gt;
+
+&lt;p&gt;I set off to design this antenna by hand using online resources and the ARRL Antenna Handbook but life had other plans. Wanting use this project to learn FreeCAD designing the brackets and to get on the air I opted to just use the great &lt;a href=&quot;https://www.66pacific.com/calculators/small-transmitting-loop-antenna-calculator.aspx&quot;&gt;www.66pacific.com&lt;/a&gt; STL antenna calculator.&lt;/p&gt;
+
+&lt;p&gt;This online calculator is self-explainitory and informative, I got the information needed to support the frequencies I wanted and purchase a suitable capacitor that can handle the high voltage expected. STL’s are a more exotic antenna from the common (electic) dipole antenna creating 1000’s of volts and 10’s of Amperes with just 20 Watts of RF power.&lt;/p&gt;
+
+&lt;h2 id=&quot;3d-printed-bracket-design&quot;&gt;3D Printed Bracket Design&lt;/h2&gt;
+
+&lt;p&gt;I used this project to learn the basic of &lt;a href=&quot;https://www.freecadweb.org/&quot;&gt;FreeCAD&lt;/a&gt; mechanical CAD software. 3D printing made attaching the copper piping, coupling loop, and capacitor tuning enclosure easy! I had not used mechanical CAD tools prior so after a bit of riding the struggle bus, working through tutorials, I wrapped my head around parametrically creating components. My design files improve incrementally with the latter (coupling loop bracket) employing FreeCAD spreadsheet relationship dimensions allowing easy changes to the features and dimensions of the part.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/3D-CAD-Overview.png&quot; alt=&quot;Overview 3D CAD model of the major copper tube mounting brackets&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/3D-CAD-Bottom-Copper.png&quot; alt=&quot;3D CAD model of the bottom copper pipe mounting bracket&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/CAD-Spreadsheet.png&quot; alt=&quot;Relationship parametric modeling in FreeCAD.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/Coupling-Loop-Bracket.png&quot; alt=&quot;3D model of the completed coupling loop bracket.&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;key-components&quot;&gt;Key Components&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1/2” copper water pipe&lt;/li&gt;
+  &lt;li&gt;15-120pf 2.8KV air variable butterfly capacitor (RFParts 73-175-17)&lt;/li&gt;
+  &lt;li&gt;2 1/2” Schedule 40 PVC (Mast)&lt;/li&gt;
+  &lt;li&gt;3D Printed PVC mounting brackets (designed using FreeCAD)&lt;/li&gt;
+  &lt;li&gt;Polycase WA-44 enclosure&lt;/li&gt;
+  &lt;li&gt;Raspberry Pi 3&lt;/li&gt;
+  &lt;li&gt;Adafruit DC and Stepper Motor HAT&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 29 Mar 2021 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2021/magnetic-loop/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/magnetic-loop/</guid>
+        
+        
+      </item>
     
       <item>
         <title>SOTA Activation W6/SC-213</title>
@@ -90,8 +158,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 25 Oct 2020 17:00:00 -0700</pubDate>
-        <link>http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</link>
-        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</guid>
+        <link>http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</guid>
         
         <category>ham radio</category>
         
@@ -184,8 +252,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 25 Feb 2020 16:00:00 -0800</pubDate>
-        <link>http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</link>
-        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</guid>
+        <link>http://localhost:4000/2020/climbing-mt-shasta-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/climbing-mt-shasta-2019/</guid>
         
         <category>mountaineering</category>
         
@@ -215,8 +283,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;p&gt;&lt;img src=&quot;/images/2020-02-18/DSC01991.jpg&quot; alt=&quot;Climbing Waterfall Cliffs - Castle Rock State Park&quot; height=&quot;512px&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Feb 2020 16:34:00 -0800</pubDate>
-        <link>http://www.brentonsalmi.com/2020/new-website/</link>
-        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/new-website/</guid>
+        <link>http://localhost:4000/2020/new-website/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/new-website/</guid>
         
         <category>website</category>
         
