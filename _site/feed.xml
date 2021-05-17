@@ -3,10 +3,10 @@
   <channel>
     <title>Brenton Salmi</title>
     <description>Brents Personal Website</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Mar 2021 23:52:05 -0700</pubDate>
-    <lastBuildDate>Mon, 29 Mar 2021 23:52:05 -0700</lastBuildDate>
+    <link>http://www.brentonsalmi.com/</link>
+    <atom:link href="http://www.brentonsalmi.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 15 May 2021 23:53:22 -0700</pubDate>
+    <lastBuildDate>Sat, 15 May 2021 23:53:22 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -14,7 +14,7 @@
         <description>
 &lt;hr /&gt;
 &lt;p&gt;title:  “Building A Magnetic Loop Antenna”
-date:   2021-03-29 00:00:00
+date:   2021-05-15 00:00:00
 categories: [amateur radio]
 tags: [ham radio, antenna, homebrew, radio]
 —
@@ -24,11 +24,17 @@ During the 2020 COVID-19 pandemic I decided to dive back into the world of amatu
 
 &lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/Loop-Photo-1.jpg&quot; alt=&quot;KB1LQD's homebuilt 10 meter through 15 meter ham radio magnetic loop antenna.&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;The antenna works! Here’s a preview of my first receiving test after the initial build.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fqcyk08vzMg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;p&gt;This is not a detailed how-to article but I will provide helpful links and insight I discovered during this design/build.&lt;/p&gt;
+
+&lt;p&gt;You can find my GitHub repository for this project &lt;a href=&quot;https://github.com/kb1lqd/pvc_mag_loop_Mechanicals_Dec2020&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;There are many resources online about magnetic loop, A.K.A Small Transmitting Loop (STL) antennas. Additionaly, there is a lot of misinformation including some in very popular resources listed below. Ultimately a mix-and-match will fill in most details and key tradeoffs. It’s an antenna and there’s no black-magic RF noise filtering involved.&lt;/p&gt;
+&lt;p&gt;There are many resources online about magnetic loop, A.K.A Small Transmitting Loop (STL) antennas. Additionally, there is a lot of misinformation including some in very popular resources listed below. Ultimately a mix-and-match will fill in most details and key tradeoffs. It’s an antenna and there’s no black-magic RF noise filtering involved.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.66pacific.com/calculators/small-transmitting-loop-antenna-calculator.aspx&quot;&gt;www.66pacific.com Small Transmitting Loop Calculator&lt;/a&gt;&lt;/li&gt;
@@ -44,19 +50,47 @@ During the 2020 COVID-19 pandemic I decided to dive back into the world of amatu
 
 &lt;p&gt;I set off to design this antenna by hand using online resources and the ARRL Antenna Handbook but life had other plans. Wanting use this project to learn FreeCAD designing the brackets and to get on the air I opted to just use the great &lt;a href=&quot;https://www.66pacific.com/calculators/small-transmitting-loop-antenna-calculator.aspx&quot;&gt;www.66pacific.com&lt;/a&gt; STL antenna calculator.&lt;/p&gt;
 
-&lt;p&gt;This online calculator is self-explainitory and informative, I got the information needed to support the frequencies I wanted and purchase a suitable capacitor that can handle the high voltage expected. STL’s are a more exotic antenna from the common (electic) dipole antenna creating 1000’s of volts and 10’s of Amperes with just 20 Watts of RF power.&lt;/p&gt;
+&lt;p&gt;This online calculator is self-explanatory and informative, I got the information needed to support the frequencies I wanted and purchase a suitable capacitor that can handle the high voltage expected. STL’s are a more exotic antenna from the common dipole antenna creating 1000’s of volts and many Amps of current with just 20 Watts of RF power. This exotic functionality is due to the very very low radiation resistance of this antenna.&lt;/p&gt;
 
 &lt;h2 id=&quot;3d-printed-bracket-design&quot;&gt;3D Printed Bracket Design&lt;/h2&gt;
 
-&lt;p&gt;I used this project to learn the basic of &lt;a href=&quot;https://www.freecadweb.org/&quot;&gt;FreeCAD&lt;/a&gt; mechanical CAD software. 3D printing made attaching the copper piping, coupling loop, and capacitor tuning enclosure easy! I had not used mechanical CAD tools prior so after a bit of riding the struggle bus, working through tutorials, I wrapped my head around parametrically creating components. My design files improve incrementally with the latter (coupling loop bracket) employing FreeCAD spreadsheet relationship dimensions allowing easy changes to the features and dimensions of the part.&lt;/p&gt;
+&lt;p&gt;I used this project to learn the basics of &lt;a href=&quot;https://www.freecadweb.org/&quot;&gt;FreeCAD&lt;/a&gt; mechanical CAD software. 3D printing made attaching the copper piping, coupling loop, and capacitor tuning enclosure easy! I had not used mechanical CAD tools prior so after a bit of riding the struggle bus, working through tutorials, I wrapped my head around parametrically creating components. My design files improve incrementally with the latter (coupling loop bracket) employing FreeCAD spreadsheet relationship dimensions allowing easy changes to the features and dimensions of the part.&lt;/p&gt;
+
+&lt;p&gt;The overall structure of the loop is just an octagon created using copper pipes and 45 degree elbows.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/3D-CAD-Overview.png&quot; alt=&quot;Overview 3D CAD model of the major copper tube mounting brackets&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;This is a fairly simple clamp I made to hold the loop to the PVC mast but still allow easy removal of just the loop itself.&lt;/p&gt;
+
 &lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/3D-CAD-Bottom-Copper.png&quot; alt=&quot;3D CAD model of the bottom copper pipe mounting bracket&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The coupling loop part is the most well designed part as it was my last part in FreeCAD. Here is the SO-239 RF connector mount where the coupling loop is placed. The radio coax attaches from my radio to this connector.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/CAD-Spreadsheet.png&quot; alt=&quot;Relationship parametric modeling in FreeCAD.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/Coupling-Loop-Bracket.png&quot; alt=&quot;3D model of the completed coupling loop bracket.&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tuning-capacitor-housing&quot;&gt;Tuning Capacitor Housing&lt;/h2&gt;
+
+&lt;p&gt;I decided there wasn’t a strong need to model the capacitor, stepper, and mounting brackets/gearing in FreeCAD and opted to just use paper designs in my notebook. I used this opportunity to practice my hacksaw, filing, and drilling skills.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/Ev6Z8ScUcAQdAQD.jpg&quot; alt=&quot;Internals of the loop tuning capacitor and stepper motor box.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A single piece of acrylic sheet was used as a baseplate, it was cut into shape the fit a Polycase WA-44 Enclosure. I used a simple gearing ration of 1:2 between the stepper motor and capacitor, this works reasonably well although it’s easy to overshoot the tuning and a lower gearing ratio would make this easier.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/U6Z16eGF7t4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Note, a redesign of the stepper bracket was made to increase rigidity.&lt;/p&gt;
+
+&lt;h1 id=&quot;does-it-work&quot;&gt;Does It Work?&lt;/h1&gt;
+
+&lt;p&gt;It does! I can tune the loop capacitance and thus frequency using a simple python script. Tuning is still manual but quite simple, turn clockwise or counterclockwise until the noise floor increases dramatically. Using a few quick tuning transmissions I can fine-tune to about a 1:1 SWR. Here’s a video using the loop antenna during a contest, note that I took this video originally to capture a quick HF upconverter I designed with some spare parts and an NE602 mixer I had.&lt;/p&gt;
+
+&lt;p&gt;The www.pskreporter.com report below shows that my FT8 signals are reaching across the United States and I’m receiving folks similarly!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2021-03-29-magnetic-loop-antenna/EwdSQ-_VkAAi-6A.jpg&quot; alt=&quot;FT8 PSKReporter map test.&quot; /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/S70tplSyeI4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;key-components&quot;&gt;Key Components&lt;/h3&gt;
 
@@ -70,9 +104,9 @@ During the 2020 COVID-19 pandemic I decided to dive back into the world of amatu
   &lt;li&gt;Adafruit DC and Stepper Motor HAT&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 29 Mar 2021 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2021/magnetic-loop/</link>
-        <guid isPermaLink="true">http://localhost:4000/2021/magnetic-loop/</guid>
+        <pubDate>Sat, 15 May 2021 00:00:00 -0700</pubDate>
+        <link>http://www.brentonsalmi.com/2021/magnetic-loop/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2021/magnetic-loop/</guid>
         
         
       </item>
@@ -158,8 +192,8 @@ During the 2020 COVID-19 pandemic I decided to dive back into the world of amatu
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 25 Oct 2020 17:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/pinnaclesnps-sota-hawkins-peak/</guid>
+        <link>http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/pinnaclesnps-sota-hawkins-peak/</guid>
         
         <category>ham radio</category>
         
@@ -252,8 +286,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 25 Feb 2020 16:00:00 -0800</pubDate>
-        <link>http://localhost:4000/2020/climbing-mt-shasta-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/climbing-mt-shasta-2019/</guid>
+        <link>http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/climbing-mt-shasta-2019/</guid>
         
         <category>mountaineering</category>
         
@@ -283,8 +317,8 @@ The last few hundred feet of elevation had some of the steepest snow on the rout
 &lt;p&gt;&lt;img src=&quot;/images/2020-02-18/DSC01991.jpg&quot; alt=&quot;Climbing Waterfall Cliffs - Castle Rock State Park&quot; height=&quot;512px&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Feb 2020 16:34:00 -0800</pubDate>
-        <link>http://localhost:4000/2020/new-website/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/new-website/</guid>
+        <link>http://www.brentonsalmi.com/2020/new-website/</link>
+        <guid isPermaLink="true">http://www.brentonsalmi.com/2020/new-website/</guid>
         
         <category>website</category>
         
